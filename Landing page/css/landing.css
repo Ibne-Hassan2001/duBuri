@@ -1,0 +1,132 @@
+/* GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER_START */
+
+.header {
+    min-height: 70px;
+    background-color: aqua;
+    z-index: 1;
+        }
+.wrapper {
+    width:95%;
+    margin: 0 auto;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}        
+.logo img {
+    width: 104.72px;
+    height: 40px;
+    padding-left: 50px;
+    z-index: 5;
+    position: sticky;
+    top: 300px;
+    }
+.nav {
+
+    margin-top: 30px;
+    position: sticky;
+    z-index: 5;
+    margin-left: 100px;
+    }
+.nav ul {
+    list-style: none;
+    position: sticky;
+    }
+.nav ul li {
+    float: left;
+    }    
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 17px ;
+    font-size: 16px;
+    font-family: sans-serif;
+    }
+
+.BG1 .video-bg video 
+{   width: 100vw;
+    position: fixed;
+    top: -40px;
+    left: 0px;
+    z-index: 0;
+    padding:0 auto;
+    margin: 0 auto;
+}
+.Trans_Nav {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.609);
+}
+/* THIS IS FOR NAV-BAR HOVER-EFFECTS [START] */
+.Home-option {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(13, 204, 221, 0.301);
+    margin-top: -5px;
+}
+/* .About-option :hover ,
+.Dropdown :hover , 
+.Mem-option :hover,
+.Blog-option :hover,
+.Media-option :hover,
+.Rec-opotion :hover,
+.Cont-option :hover
+ {
+    padding: 5px 17px;
+    border-radius: 20px;
+    background-color: rgba(13, 204, 221, 0.301);
+    margin-top: -5px; 
+    transition: 0.5s 
+} */
+
+/* THIS IS FOR NAV-BAR HOVER-EFFECTS [END] */
+
+
+.AUV-option {
+
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(13, 204, 221, 0.561);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.198);
+    z-index: 6;
+    top: 22px;
+    border-radius: 20px;
+  }
+.dropdown-content ul li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 6;
+
+  }
+.Auv-dropdown:hover   .dropdown-content {display: block;}
+.Dropdown {
+    position: absolute;
+}
+.nav ul li a:hover {
+
+    padding: 5px 17px;
+    border-radius: 20px;
+    background-color: rgba(13, 204, 221, 0.301);
+    margin-top: -5px; 
+    transition: 0.5s 
+}
+.dropdown-content ul li a {
+    color: azure;
+
+}
